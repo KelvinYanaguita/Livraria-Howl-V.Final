@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\",
+  "WorkspaceRootPath": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\downloads\\livraria-howl-main (1)\\livraria-howl-main\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\onedrive\\documentos\\nova pasta\\livraria-howl-v.final\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|solutionrelative:venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\downloads\\livraria-howl-main (1)\\livraria-howl-main\\cargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|solutionrelative:cargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\downloads\\livraria-howl-main (1)\\livraria-howl-main\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\onedrive\\documentos\\nova pasta\\livraria-howl-v.final\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|solutionrelative:cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\downloads\\livraria-howl-main (1)\\livraria-howl-main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\onedrive\\documentos\\nova pasta\\livraria-howl-v.final\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|solutionrelative:funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\onedrive\\documentos\\nova pasta\\livraria-howl-v.final\\cargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|solutionrelative:cargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\onedrive\\documentos\\nova pasta\\livraria-howl-v.final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\downloads\\livraria-howl-main (1)\\livraria-howl-main\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\onedrive\\documentos\\nova pasta\\livraria-howl-v.final\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|solutionrelative:livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|c:\\users\\kelvi\\downloads\\livraria-howl-main (1)\\livraria-howl-main\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{708B17FD-7C92-46AC-A233-A3BCFAA654E7}|ConsoleApp1.csproj|solutionrelative:funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,81 +40,76 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "venda.cs",
-              "DocumentMoniker": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\venda.cs",
+              "DocumentMoniker": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\venda.cs",
               "RelativeDocumentMoniker": "venda.cs",
-              "ToolTip": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\venda.cs",
+              "ToolTip": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\venda.cs",
               "RelativeToolTip": "venda.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAA1wOEAAAAiAAAA",
+              "ViewState": "AQIAANgAAAAAAAAAAAAgwP4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T00:47:59.588Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\Cliente.cs",
               "RelativeDocumentMoniker": "Cliente.cs",
-              "ToolTip": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\Cliente.cs",
+              "ToolTip": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\Cliente.cs",
               "RelativeToolTip": "Cliente.cs",
-              "ViewState": "AQIAAJgAAAAAAAAAAAAqwAgAAAAAAAAA",
+              "ViewState": "AQIAALUAAAAAAAAAAAAkwN0AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T00:48:01.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Funcionario.cs",
-              "DocumentMoniker": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\Funcionario.cs",
+              "DocumentMoniker": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\Funcionario.cs",
               "RelativeDocumentMoniker": "Funcionario.cs",
-              "ToolTip": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\Funcionario.cs",
+              "ToolTip": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\Funcionario.cs",
               "RelativeToolTip": "Funcionario.cs",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAiwEQAAABLAAAA",
+              "ViewState": "AQIAAOgAAAAAAAAAAAAqwMYAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T00:48:00.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Livro.cs",
-              "DocumentMoniker": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\Livro.cs",
+              "DocumentMoniker": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\Livro.cs",
               "RelativeDocumentMoniker": "Livro.cs",
-              "ToolTip": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\Livro.cs",
+              "ToolTip": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\Livro.cs",
               "RelativeToolTip": "Livro.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAswCUAAAAAAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAUwNIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T00:48:00.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\Program.cs",
+              "ToolTip": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAADgv2IAAABWAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAADgvy8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T00:47:58.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Cargo.cs",
-              "DocumentMoniker": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\Cargo.cs",
+              "DocumentMoniker": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\Cargo.cs",
               "RelativeDocumentMoniker": "Cargo.cs",
-              "ToolTip": "C:\\Users\\kelvi\\Downloads\\Livraria-Howl-main (1)\\Livraria-Howl-main\\Cargo.cs",
+              "ToolTip": "C:\\Users\\kelvi\\OneDrive\\Documentos\\Nova pasta\\Livraria-Howl-V.Final\\Cargo.cs",
               "RelativeToolTip": "Cargo.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAYwBkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T00:48:01.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-19T00:48:01.845Z"
             }
           ]
         }

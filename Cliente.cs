@@ -114,6 +114,61 @@ namespace ConsoleApp1
             return cliente != null ? cliente.Nome : $"Cliente {id}";
         }
 
+        public static void ExcluirCliente()
+        {
+            Console.Clear();
+            ExibirCabecalho();
+            if (clientes.Count == 0)
+            {
+                Console.WriteLine("Nenhum cliente cadastrado ainda.");
+            }
+            else
+            {
+                Console.WriteLine("Lista Clientes:");
+                Console.WriteLine();
+                foreach (var cliente in clientes)
+                {
+                    cliente.ExibirCliente();
+
+                    Console.WriteLine("-------------------------");
+                }
+            }
+            Console.WriteLine("Excluir Cliente");
+
+            try
+            {
+                Console.Write("ID do Cliente: ");
+                if (!int.TryParse(Console.ReadLine(), out int idCliente))
+                {
+                    throw new FormatException("ID deve ser um número inteiro.");
+                }
+
+                var cliente = clientes.FirstOrDefault(c => c.Id == idCliente);
+                if (cliente != null)
+                {
+                    clientes.Remove(cliente);
+                    Console.WriteLine($"Cliente com ID {idCliente} foi excluído com sucesso.");
+                }
+                else
+                {
+                    Console.WriteLine($"Cliente com ID {idCliente} não encontrado.");
+                }
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine($"Erro de formatação: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro inesperado: {ex.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("Pressione qualquer tecla para continuar...");
+                Console.ReadKey();
+            }
+        }
+
         public static void ListarClientes()
         {
             Console.Clear();
@@ -147,50 +202,44 @@ namespace ConsoleApp1
 
         public static void SubmenuClientes()
         {
-
             int opcaoSubmenu = 0;
 
-            while (opcaoSubmenu != 3)
+            while (opcaoSubmenu != 4)
             {
                 Console.Clear();
                 ExibirCabecalho();
-                Console.WriteLine();
                 Console.WriteLine("Submenu Clientes");
-                Console.WriteLine();
                 Console.WriteLine("1. Adicionar Cliente");
                 Console.WriteLine("2. Listar Clientes");
-                Console.WriteLine("3. Voltar ao Menu Principal");
-                Console.WriteLine();
+                Console.WriteLine("3. Excluir Cliente");
+                Console.WriteLine("4. Voltar ao Menu Principal");
                 Console.Write("Escolha uma opção: ");
 
                 if (int.TryParse(Console.ReadLine(), out opcaoSubmenu))
                 {
-                    if (opcaoSubmenu == 1)
+                    switch (opcaoSubmenu)
                     {
-                        CadastrarCliente();
-                    }
-                    else if (opcaoSubmenu == 2)
-                    {
-                        Console.WriteLine("Listagem de Clientes");
-                        ListarClientes();
-                    }
-                    else if (opcaoSubmenu == 3)
-                    {
-                        Program.MenuPrincipal();
-
-
-                    }
-                    else
-                    {
-                        Console.WriteLine("Opção inválida. Tente novamente.");
+                        case 1:
+                            CadastrarCliente();
+                            break;
+                        case 2:
+                            ListarClientes();
+                            break;
+                        case 3:
+                            ExcluirCliente();
+                            break;
+                        case 4:
+                            Program.MenuPrincipal();
+                            break;
+                        default:
+                            Console.WriteLine("Opção inválida. Tente novamente.");
+                            break;
                     }
                 }
                 else
                 {
                     Console.WriteLine("Entrada inválida. Tente novamente.");
                 }
-
-
             }
         }
     }

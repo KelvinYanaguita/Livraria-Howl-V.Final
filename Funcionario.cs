@@ -112,6 +112,65 @@ public class Funcionario
         }
     }
 
+    public static void ExcluirFuncionario()
+    {
+        Console.Clear();
+        ExibirCabecalho();
+        if (funcionarios.Count == 0)
+        {
+            Console.WriteLine("Nenhum funcionário cadastrado.");
+        }
+        else
+        {
+            Console.WriteLine("Listagem de Funcionários");
+            Console.WriteLine();
+            foreach (var funcionario in funcionarios)
+            {
+                string nomeCargo = funcionario.NomeCargo();
+                Console.WriteLine($" ID Funcionario: {funcionario.IdFuncionario} \n" +
+                                  $" Nome: {funcionario.Nome} \n" +
+                                  $" Cargo: {nomeCargo} \n" +
+                                  $" Salário: {funcionario.Salario:C} \n" +
+                                  $" Carteira de Trabalho: {funcionario.CarteiraDeTrabalho}");
+                Console.WriteLine("-------------------------------");
+            }
+        }
+        Console.WriteLine("Excluir Cliente");
+
+        try
+        {
+            Console.Write("ID do Funcionario: ");
+            if (!int.TryParse(Console.ReadLine(), out int idFuncionario))
+            {
+                throw new FormatException("ID deve ser um número inteiro.");
+            }
+
+            var funcionario = funcionarios.FirstOrDefault(f => f.IdFuncionario == idFuncionario);
+            if (funcionario != null)
+            {
+                funcionarios.Remove(funcionario);
+                Console.WriteLine($"Funcionario com ID {idFuncionario} foi excluído com sucesso.");
+            }
+            else
+            {
+                Console.WriteLine($"Funcionario com ID {idFuncionario} não encontrado.");
+            }
+        }
+        catch (FormatException ex)
+        {
+            Console.WriteLine($"Erro de formatação: {ex.Message}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro inesperado: {ex.Message}");
+        }
+        finally
+        {
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
+        }
+    }
+
     public static void ListarFuncionarios()
     {
         Console.Clear();
@@ -134,8 +193,10 @@ public class Funcionario
                                   $" Salário: {funcionario.Salario:C} \n" +
                                   $" Carteira de Trabalho: {funcionario.CarteiraDeTrabalho}");
                 Console.WriteLine("-------------------------------");
+               
             }
-        }
+        } Console.WriteLine("Pressione qualquer tecla para continuar...");
+                Console.ReadKey();
 
     }
 
@@ -143,51 +204,42 @@ public class Funcionario
     {
         int opcaoSubmenu = 0;
 
-        while (opcaoSubmenu != 3)
+        while (opcaoSubmenu != 4)
         {
             Console.Clear();
             ExibirCabecalho();
-            Console.WriteLine();
-            Console.WriteLine("Submenu Funcionários");
-            Console.WriteLine();
-            Console.WriteLine("1. Adicionar Funcionário");
-            Console.WriteLine("2. Listar Funcionários");
-            Console.WriteLine("3. Voltar ao Menu Principal");
-            Console.WriteLine();
+            Console.WriteLine("Submenu Funcionarios");
+            Console.WriteLine("1. Adicionar Funcionario");
+            Console.WriteLine("2. Listar Funcionarios");
+            Console.WriteLine("3. Excluir Funcionario");
+            Console.WriteLine("4. Voltar ao Menu Principal");
             Console.Write("Escolha uma opção: ");
 
             if (int.TryParse(Console.ReadLine(), out opcaoSubmenu))
             {
-                try
+                switch (opcaoSubmenu)
                 {
-                    switch (opcaoSubmenu)
-                    {
-                        case 1:
-                            CadastrarFuncionario();
-                            break;
-                        case 2:
-                            ListarFuncionarios();
-                            break;
-                        case 3:
-                            Program.MenuPrincipal();
-                            break;
-                        default:
-                            Console.WriteLine("Opção inválida. Tente novamente.");
-                            break;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Ocorreu um erro ao processar sua opção. Erro: {ex.Message}");
+                    case 1:
+                        CadastrarFuncionario();
+                        break;
+                    case 2:
+                        ListarFuncionarios();
+                        break;
+                    case 3:
+                        ExcluirFuncionario();
+                        break;
+                    case 4:
+                        Program.MenuPrincipal();
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida. Tente novamente.");
+                        break;
                 }
             }
             else
             {
                 Console.WriteLine("Entrada inválida. Tente novamente.");
             }
-
-            Console.WriteLine("Pressione qualquer tecla para continuar...");
-            Console.ReadKey();
         }
     }
 

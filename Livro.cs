@@ -36,6 +36,62 @@ namespace ConsoleApp1
             Console.WriteLine("--------------------------");
         }
 
+        public static void ExcluirLivro()
+        {
+            Console.Clear();
+            ExibirCabecalho();
+            if (livros.Count == 0)
+            {
+                Console.WriteLine("Nenhum livro cadastrado ainda.");
+            }
+            else
+            {
+
+                Console.WriteLine("Listagem de Livros:");
+                Console.WriteLine();
+
+                foreach (var livro in livros.Distinct().ToList())
+                {
+                    livro.ExibirLivros();
+                    Console.WriteLine("-------------------------");
+                }
+            }
+            Console.WriteLine("Excluir Livro");
+
+            try
+            {
+                Console.Write("ID do Livro: ");
+                if (!int.TryParse(Console.ReadLine(), out int idLivro))
+                {
+                    throw new FormatException("ID deve ser um número inteiro.");
+                }
+
+                var livro = livros.FirstOrDefault(l => l.IdLivro == idLivro);
+                if (livro != null)
+                {
+                    livros.Remove(livro);
+                    Console.WriteLine($"Cliente com ID {idLivro} foi excluído com sucesso.");
+                }
+                else
+                {
+                    Console.WriteLine($"Cliente com ID {idLivro} não encontrado.");
+                }
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine($"Erro de formatação: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro inesperado: {ex.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("Pressione qualquer tecla para continuar...");
+                Console.ReadKey();
+            }
+        }
+
         public static Livro BuscarLivroPorId(int id)
         {
             return livros.FirstOrDefault(l => l.IdLivro == id);
@@ -143,7 +199,7 @@ namespace ConsoleApp1
         {
             int opcaoSubmenu = 0;
 
-            while (opcaoSubmenu != 3)
+            while (opcaoSubmenu != 4)
             {
                 Console.Clear();
                 ExibirCabecalho();
@@ -152,7 +208,8 @@ namespace ConsoleApp1
                 Console.WriteLine();
                 Console.WriteLine("1. Adicionar Livro");
                 Console.WriteLine("2. Listar Livros");
-                Console.WriteLine("3. Voltar ao Menu Principal");
+                Console.WriteLine("3. Excluir Livros");
+                Console.WriteLine("4. Voltar ao Menu Principal");
                 Console.WriteLine();
                 Console.Write("Escolha uma opção: ");
 
@@ -169,6 +226,9 @@ namespace ConsoleApp1
                                 ListarLivros();
                                 break;
                             case 3:
+                                ExcluirLivro();
+                                break;
+                            case 4:
                                 Program.MenuPrincipal();
                                 break;
                             default:
